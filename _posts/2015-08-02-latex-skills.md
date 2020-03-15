@@ -1,5 +1,5 @@
 ---
-date: 2019-09-02 08:43:27
+date: 2020-03-15 14:08:36
 title: LaTeX 使用总结
 categories: technology
 ---
@@ -245,7 +245,30 @@ latexmk -pdf -pdflatex="xelatex -interactive=nonstopmode" -pv your.tex
 latexmk -pv your.tex
 ```
 
-如果需要设置常用属性(比如编译采用 `xelatex` 还是 `pdfletx`), 可以了解 `.latexmkrc` 文件的配置。
+如果需要设置常用属性(比如编译采用 `xelatex` 还是 `pdfletx`), 可以了解 `.latexmkrc` 文件的配置。通过编写 Makefile 重复利用相同的编译配置，如下：
+
+```bash
+# Makefile
+# make all
+# make watch
+# make clean
+PROJNAME=main
+.PHONY: $(PROJNAME).pdf all watch clean
+
+all: $(PROJNAME).pdf
+
+$(PROJNAME).pdf: $(PROJNAME).tex
+	latexmk -pdf -pdflatex="xelatex -interactive=nonstopmode" -use-make $<
+
+# automatic compile without preview
+watch: $(PROJNAME).tex
+	latexmk -pdf -pdflatex="xelatex -interactive=nonstopmode" -use-make -pvc -view=none $<
+
+# clean temp files
+clean:
+	latexmk -c
+	rm -f *.lol *.bbl *.auxlock *.synctex.gz tex/*.aux
+```
 
 ## Beamer 使用
 
