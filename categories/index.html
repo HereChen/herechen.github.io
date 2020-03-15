@@ -1,0 +1,20 @@
+---
+title: 分类
+layout: default
+---
+
+<article>
+  <h1>分类</h1>
+  {% for cat in site.categories %}
+    <h2>{{ cat[0] }} ({{ cat[1].size }})</h2>
+    {% for post in cat[1] %}
+      <div class="post-list-item">
+        <time datetime="{{ post.date }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" title="{{ post.title }}">
+          {% include category-emoji.html category=post.categories %}
+          {{ post.title }}
+        </a>
+      </div>
+    {% endfor %}
+  {% endfor %}
+</article>

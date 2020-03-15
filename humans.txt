@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    陈磊, chenlei.here@qq.com
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML, CSS, [Jekyll](https://github.com/jekyll/jekyll), [Primer CSS](https://github.com/primer/css)

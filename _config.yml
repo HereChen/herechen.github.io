@@ -1,0 +1,31 @@
+# peronal
+name: 朴素 						                      # site name
+author: 陈磊					                      # site author
+url: https://herechen.github.io			        # site url
+quote: 朴素·生命力·自我批判 		            # my quote
+email: chenlei.here@qq.com
+github_username: HereChen   	              # github.com account
+
+# jekyll config
+port: 9000
+markdown: kramdown 				                  # markdown parser(or rdiscount)
+# highlighter: rouge
+permalink: /post/:title/	                  # change default url
+safe: true         				                  # safe mode
+defaults:
+  -
+    scope:
+      path: ""                              # include all files
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude: [node_modules]
+sass:
+    style: compressed
+    sass_dir: ./assets/css
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+layouts_dir: ./_layouts
+destination: ./_site
+encoding:     "utf-8"

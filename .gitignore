@@ -1,0 +1,9 @@
+_site/*
+node_modules/*
+resume/css/.sass-cache/*
+resume/css/style.css.map
+*.sublime-project
+*.sublime-workspace
+.vscode/*
+.DS_Store
+debug.log

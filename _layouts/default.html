@@ -1,0 +1,53 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<!-- I do not know nothing. -->
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="description" content="{{ site.quote }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ site.quote }}" />
+    <title>
+      {% if page.title %} {% include category-emoji.html category=page.categories %} {{ page.title }} {% else %} {{
+      site.title }} {% endif %}
+    </title>
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="alternate" href="/feed.xml" title="{{ site.author }}" type="application/atom+xml" />
+    <link rel="author" href="/humans.txt" type="text/plain" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    {% comment %}
+    <!-- plugins.mjs will load twice if timestamp added-->
+    <!-- <link rel="modulepreload" href="/assets/js/plugins.mjs"> -->
+    <!-- <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/instantclick@3.1.0-2/dist/instantclick.min.js"> -->
+
+    <!-- another theme -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@3.0.1/github-markdown.min.css"> -->
+    {% endcomment %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@primer/css@14.2.0/dist/primer.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pygments-css@1.0.0/github.min.css" />
+  </head>
+  <body class="container-md p-3">
+    <header class="clearfix">
+      <a class="float-left p-1" href="/" title="home">{{ site.name }}</a>
+      <nav class="float-right p-1">
+        <a class="mr-3" href="/archives/" title="archives">归档</a>
+        <a href="/categories/" title="categories">分类</a>
+      </nav>
+    </header>
+    <main class="markdown-body">
+      {{ content }}
+    </main>
+    {% comment %}
+    <!-- <script type="module" src="/assets/js/app.mjs?1565186510636" async></script> -->
+    {% endcomment %}
+  </body>
+</html>

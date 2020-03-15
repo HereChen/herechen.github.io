@@ -1,0 +1,7 @@
+# robots.txt generated at http://tool.chinaz.com/robots/
+User-agent: *
+Disallow:
+Disallow: /.gitignore
+Disallow: /.editorconfig
+Disallow: /_config.yml
+Sitemap: https://herechen.github.io/sitemap.xml

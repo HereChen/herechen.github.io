@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<article>
+  <h1>
+    {% include category-emoji.html category=page.categories %}
+    {{ page.title }}
+  </h1>
+  <p>
+    <time datetime="{{ page.date }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+  </p>
+  <section>
+    {{ content }}
+  </section>
+</article>
