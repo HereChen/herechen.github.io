@@ -9,6 +9,7 @@ github_username: HereChen   	              # github.com account
 # jekyll config
 port: 9000
 markdown: kramdown 				                  # markdown parser(or rdiscount)
+future: true
 # highlighter: rouge
 permalink: /post/:title/	                  # change default url
 safe: true         				                  # safe mode
