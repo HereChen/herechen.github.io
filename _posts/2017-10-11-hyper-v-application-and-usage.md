@@ -7,7 +7,7 @@ categories: technology
 
 ## Hyper-V 启用
 
-查看 [Install Hyper-V on Windows 10](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v) 和 [Hyper-V 安装配置及网页兼容测试](https://herechen.github.io/technology/set-windows-hyper-v-for-web-test/)。
+查看 [Install Hyper-V on Windows 10](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v) 和 [Hyper-V 安装配置及网页兼容测试](/post/set-windows-hyper-v-for-web-test/)。
 
 ```powershell
 # PowerShell 启用 Hyper-V
@@ -24,7 +24,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 
 > <https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/>
 
-可参考 [HYPER-V 安装配置及网页兼容测试](https://herechen.github.io/technology/set-windows-hyper-v-for-web-test/).
+可参考 [HYPER-V 安装配置及网页兼容测试](/post/set-windows-hyper-v-for-web-test/).
 
 ## Linux 服务器 (CentOS 7.3)
 
