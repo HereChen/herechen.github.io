@@ -29,8 +29,9 @@ categories: resources
 - [shuttle](https://github.com/fitztrev/shuttle): (macOS) SSH 快捷登陆（保存数据到JSON中）
 - [CheatSheet](https://www.mediaatelier.com/CheatSheet/)：macOS 查看每个应用的快捷键。
 - [Dash](https://kapeli.com/dash): macOS 本地查看绝大多数的开发文档。Windows 系统替代品 [Velocity](http://velocity.silverlakesoftware.com/) 和 [Zeal](https://zealdocs.org/).
-- [hjsplit](http://www.hjsplit.org/): 文本分割, 可用于分割日志文件(文件太大加载不出来).
+- [hjsplit](http://www.hjsplit.org/): 文本分割, 可用于分割日志文件(文件太大加载不出来)。
 - [dbeaver](https://github.com/dbeaver/dbeaver): 跨平台数据库客户端。
+- [jd-gui](https://github.com/java-decompiler/jd-gui): Java 反编译（jar 包反编译）。
 
 ## 设计工具
 
