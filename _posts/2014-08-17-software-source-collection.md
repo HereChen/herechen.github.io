@@ -18,6 +18,7 @@ categories: resources
 
 ## 开发工具
 
+- [DevDocs](https://devdocs.io): 各种技术文档，可作为 PWA 安装，并缓存文档，类似 Dash。
 - [Sublime Text](http://www.sublimetext.com): 文本编辑器。优点，快。
 - [Visual Studio Code](https://code.visualstudio.com): 文本编辑器。
 - [Git](http://git-scm.com): 版本控制终端。
